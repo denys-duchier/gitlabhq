@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 module Gitlab
   module Regex
     extend self
@@ -7,7 +9,7 @@ module Gitlab
     end
 
     def project_name_regex
-      /\A[a-zA-Z0-9][a-zA-Z0-9_\-\. ]*\z/
+      /\A\p{Word}[\p{Word}\-:\. ]*\z/
     end
 
     def name_regex
