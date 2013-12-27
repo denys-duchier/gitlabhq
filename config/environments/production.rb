@@ -73,11 +73,10 @@ Gitlab::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   config.action_mailer.delivery_method = :sendmail
-  # Defaults to:
-  # # config.action_mailer.sendmail_settings = {
-  # #   location: '/usr/sbin/sendmail',
-  # #   arguments: '-i -t'
-  # # }
+  config.action_mailer.sendmail_settings = {
+    location: '/usr/sbin/sendmail',
+    arguments: '-i'
+  }
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
 
