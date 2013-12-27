@@ -134,13 +134,16 @@ gem "underscore-rails", "~> 1.4.4"
 # Sanitize user input
 gem "sanitize"
 
+# The newer revision of charlock_holmes that is finally fixed to 
+# be compatible with Gentoo
+gem "charlock_holmes", git: "https://github.com/brianmario/charlock_holmes.git", ref: "dde194609b3513b0d2369ce8f916ae52566154b4"
+
 # Protect against bruteforcing
 gem "rack-attack"
 
 gem "sass-rails"
 gem "coffee-rails"
 gem "uglifier"
-gem "therubyracer"
 gem 'turbolinks'
 gem 'jquery-turbolinks'
 
